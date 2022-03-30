@@ -4,6 +4,7 @@ const items = document.getElementsByTagName('li')
 function toggleNav() {
     menu.classList.toggle('change')
     overlay.classList.toggle('slide-out')
+    
 }
 
 menu.addEventListener('click', toggleNav)
