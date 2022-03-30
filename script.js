@@ -3,8 +3,14 @@ const overlay = document.getElementById('menuoverlay')
 const items = document.getElementsByTagName('li')
 function toggleNav() {
     menu.classList.toggle('change')
-    overlay.classList.toggle('slide-out')
-    
+    if (overlay.classList.contains('slide-out')){
+        overlay.classList.remove('slide-out')
+        overlay.classList.add('slide-in')
+    } else {
+        overlay.classList.remove('slide-in')
+        overlay.classList.add('slide-out')
+    }
+  
 }
 
 menu.addEventListener('click', toggleNav)
@@ -17,3 +23,13 @@ list.forEach((item) => {
     }
   }
 )
+
+function checkWidth(){
+    if(window.innerWidth < 630){
+        overlay.classList.add('slide-out')
+ }else{
+     overlay.classList.remove('slide-out')
+     
+ }
+}
+ window.addEventListener('resize',checkWidth)  

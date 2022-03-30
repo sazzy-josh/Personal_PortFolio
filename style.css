@@ -91,7 +91,7 @@ span a {
 
 .slide-out{
     transform: translateX(-100vw);
-    transition: all 0.8s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 li a:hover {
@@ -171,7 +171,9 @@ section#home {
     background-position: center center;
 }
 
-section#home a {}
+section#home a {
+
+}
 
 section#about {
     background-color: var(--navColor2);
