@@ -281,12 +281,12 @@ section#contact {
     }
     #menuoverlay {
         width: 100vw;
-        transform: translateX();
+       
         
       
     }
     #overlay {
-        background-color: rgb(0, 0, 0, 0.4);
+        background-color: rgb(0, 0, 0, );
         z-index: 9;
     }
     ul li:nth-of-type(1) {

@@ -26,12 +26,13 @@ let list = Array.from(items)
 list.forEach((item) => {
     let child = item.firstElementChild
     if(child.classList.contains('link')){
-        child.addEventListener('click',toggleNav)
+        child.addEventListener('click', toggleNav)
     }
   }
 )
 
 function checkWidth(){
+   
     if(window.innerWidth < 670){
         overlay.classList.add('slide-out')
  }else{
