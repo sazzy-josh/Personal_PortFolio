@@ -6,7 +6,8 @@ let container = document.getElementById('container')
 
 window.addEventListener('load',checkWidth)
 window.addEventListener('resize', checkWidth)
-function toggleNav() {
+function toggleNav(e) {
+    e.preventDefault()
     menu.classList.toggle('change')
     if (overlay.classList.contains('slide-out')){
         overlay.classList.remove('slide-out')
@@ -31,8 +32,8 @@ list.forEach((item) => {
   }
 )
 
-function checkWidth(){
-   
+function checkWidth(e){
+   e.preventDefault()
     if(window.innerWidth < 670){
         overlay.classList.add('slide-out')
  }else{
