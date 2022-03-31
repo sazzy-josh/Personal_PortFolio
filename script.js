@@ -1,14 +1,17 @@
 const menu = document.getElementById('bars')
 const overlay = document.getElementById('menuoverlay')
 const items = document.getElementsByTagName('li')
+let container = document.getElementById('container')
 function toggleNav() {
     menu.classList.toggle('change')
     if (overlay.classList.contains('slide-out')){
         overlay.classList.remove('slide-out')
         overlay.classList.add('slide-in')
+        container.style.opacity = "0.1"
     } else {
         overlay.classList.remove('slide-in')
         overlay.classList.add('slide-out')
+        container.style.opacity = "1"
     }
   
 }
