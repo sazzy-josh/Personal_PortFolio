@@ -178,6 +178,7 @@ section#home {
     background-size: cover;
     background-position: center center;
     opacity: 0.6;
+    min-height:100vh;
 }
 
 section#home a {}
