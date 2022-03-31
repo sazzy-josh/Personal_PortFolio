@@ -25,7 +25,7 @@ list.forEach((item) => {
 )
 
 function checkWidth(){
-    if(window.innerWidth < 630){
+    if(window.innerWidth < 670){
         overlay.classList.add('slide-out')
  }else{
      overlay.classList.remove('slide-out')

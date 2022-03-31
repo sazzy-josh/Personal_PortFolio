@@ -60,7 +60,7 @@ li a {
 
 span a {
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left: 10px;
     color: var(--primaryColor);
     border-bottom: 1px solid var(--primaryColor);
@@ -288,20 +288,25 @@ section#contact {
     }
     ul li:nth-of-type(1) {
         background-color: var(--navColor1);
+        opacity: 0.8;
      }
     ul li:nth-of-type(2) {
         background-color: var(--navColor2);
+        opacity: 0.8;
            }
     ul li:nth-of-type(3) {
         background-color: var(--navColor3);
+        opacity: 0.8;
        
     }
     ul li:nth-of-type(4) {
         background-color: var(--navColor4);
+        opacity: 0.8;
        
     }
     ul li:nth-of-type(5) {
         background-color: var(--navColor5);
+        opacity: 0.8;
        
     }
 
