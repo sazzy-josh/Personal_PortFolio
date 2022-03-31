@@ -2,6 +2,10 @@ const menu = document.getElementById('bars')
 const overlay = document.getElementById('menuoverlay')
 const items = document.getElementsByTagName('li')
 let container = document.getElementById('container')
+
+
+window.addEventListener('load',checkWidth)
+window.addEventListener('resize', checkWidth)
 function toggleNav() {
     menu.classList.toggle('change')
     if (overlay.classList.contains('slide-out')){
@@ -35,5 +39,5 @@ function checkWidth(){
      
  }
 }
- window.addEventListener('load',checkWidth)  
- window.addEventListener('resize', checkWidth)
+  
+ 
